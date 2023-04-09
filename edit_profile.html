@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="edit_profile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+<body>
+    
+    <h2>Edit Profile</h2>
+    <div class = "mx-auto profile-picture">
+    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" class="rounded-circle shadow-4"
+  style="width: 150px;" alt="Avatar" />
+  <a href="change-profile-picture.html" title="Change Profile Picture">Change Profile Picture</a>
+     </div>
+    <form class="mx-auto centered-form">
+        <div class = "form-container">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName">
+          </div>
+          
+          <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName">
+          </div>
+        <div class="form-group">
+          <label for="InputEmail1">Email address</label>
+          <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+            <label for="major">Major</label>
+            <input type="text" class="form-control" id="major">
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+</body>
+</html>
