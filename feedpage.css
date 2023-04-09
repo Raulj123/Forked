@@ -1,0 +1,104 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    margin: 0;
+}
+
+.hero-section {
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    max-width: 50px;
+    max-height: 50px;
+    min-height: 50px;
+    min-height: 50px;
+}
+
+.card-container {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    list-style: none;
+    width: 200px;
+    transition: .3s ease;
+}
+
+.card::before {
+    content: "";
+    display: block;
+    padding: 150%;
+    width: 100%;
+}
+
+.card-background{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    background-size: 200px;
+    background-position: center;
+    filter: brightness(.9) saturate(1) contrast(1);
+    transform-origin: bottom;
+    transform: scale(1) translateZ(0);
+    transition: .3s ease;
+}
+
+
+
+.card:hover .card-background {
+    transform: scale(1.15) translateZ(0);
+    background-size: 200px;
+}
+
+.card-grid:hover > .card:not(:hover) {
+    transform: scale(.9);
+}
+
+.card-grid:hover > .card:not(:hover) .card-background,
+.card-grid:hover > .card:not(:hover) .card-category {
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card-category {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.card-heading {
+    color: #fff;
+    font-size: 25px;
+    line-height: 1;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, .2)
+}
