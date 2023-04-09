@@ -1,12 +1,37 @@
-.centered-form {
+.content-wrapper {
+    display: flex;
+  }
+  
+  .centered-form {
     max-width: 500px;
   }
-.profile-picture {
+  
+  .profile-picture {
     max-width: 500px;
-    margin-bottom: 50px;;
-}
-
-.subHeader {
-    max-width: 500px;
+    margin-bottom: 50px;
+  }
+  
+  .subHeader {
+    max-width: 900px;
     margin-bottom: 30px;
-}
+  }
+
+  li {
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .side-bar ul {
+    list-style-type: none;
+  }
+
+  .custom-btn {
+    width: 150px;
+    height: 40px;
+    margin: 2px;
+  }
+  
+  .head  {
+    padding-left: 50px;
+  }
