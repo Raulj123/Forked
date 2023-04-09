@@ -46,31 +46,116 @@
           <div class="card-background" style="background-image: url(https://source.unsplash.com/random/);"></div>"
           <div class="content">
             <div class="card-category">Looking for Groups</div>
-            <h3 class="card-heading"> User1</h3>
+            <h3 class="userName"> User1</h3>
           </div>
         </div>
         <div class="card">
           <div class="card-background" style="background-image: url(https://source.unsplash.com/random/);"></div>"
           <div class="content">
             <div class="card-category">Looking for Member</div>
-            <h3 class="card-heading"> User2</h3>
+            <h3 class="userName"> User2</h3>
           </div>
         </div>
         <div class="card">
           <div class="card-background" style="background-image: url(https://source.unsplash.com/random/);"></div>"
           <div class="content">
             <div class="card-category">Looking for Groups</div>
-            <h3 class="card-heading"> User3</h3>
+            <h3 class="userName"> User3</h3>
           </div>
         </div>
         <div class="card">
           <div class="card-background" style="background-image: url(https://source.unsplash.com/random/);"></div>"
           <div class="content">
             <div class="card-category">Looking for Members</div>
-            <h3 class="card-heading"> User4</h3>
+            <h3 class="userName"> User4</h3>
           </div>
         </div>
       </div>
+      
     </div>
   </body>
+  </div>
+
+  <!-- End your project here-->
+  <!--onclick ="window.location.href = 'login.html'";-->
+  <script type="module">
+
+    // Import the functions you need from the SDKs you need
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+
+    // Your web app's Firebase configuration
+
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+    const firebaseConfig = {
+
+      apiKey: "AIzaSyB0-dpVIxUu3yflvnq9sC0r0JDpnrlGrCI",
+
+      authDomain: "hackathon-9dd6f.firebaseapp.com",
+
+      projectId: "hackathon-9dd6f",
+
+      storageBucket: "hackathon-9dd6f.appspot.com",
+
+      messagingSenderId: "303763798557",
+
+      appId: "1:303763798557:web:491afe62c8d14b39c4e4f4",
+
+      measurementId: "G-EVZBJS4SSX"
+
+    };
+
+
+    // Initialize Firebase
+
+    const app = initializeApp(firebaseConfig);
+
+    const analytics = getAnalytics(app);
+
+    import { getDatabase, set, update, remove, ref, child, get, onValue } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+
+
+
+    var NameHeading = document.querySelector("#userName");
+    var containerForCard = document.getElementById("#card-container");
+    const db = getDatabase();
+    const dbref = ref(db, "Users/UsersInfo//");
+
+    onValue(dbref, (snapshot) => {
+      const users = snapshot.val();
+      const userFirstNames = Object.keys(users).map((key) => users[key].First);
+      const userMajor = Object.keys(users).map((key) => users[key].Major);
+      console.log(userMajor);
+
+      Object.values(userFirstNames).forEach((user) => {
+      
+        const nameShow = document.createElement("p");
+        nameShow.textContent = user;
+        NameHeading.appendChild(nameShow);
+
+      });
+
+    });
+
+
+
+
+
+  </script>
+
+
+
+
+
+
+</body>
+
 </html>

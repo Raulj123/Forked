@@ -1,3 +1,12 @@
+//got errors saying sum about import has to be on top couldnt fix had to move script module to actaul index file. 
+
+
+
+
+
+
+
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
 
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
