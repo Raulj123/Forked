@@ -68,7 +68,7 @@ body {
 .card::before {
     content: "";
     display: block;
-    padding: 102%;
+    padding: 75%;
     width: 100%;
 }
 
