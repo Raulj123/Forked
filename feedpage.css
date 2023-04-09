@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100px;
+    min-height: 50px;
     margin: 0;
 }
 
@@ -68,7 +68,7 @@ body {
 .card::before {
     content: "";
     display: block;
-    padding: 150%;
+    padding: 102%;
     width: 100%;
 }
 
@@ -108,7 +108,7 @@ body {
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 5px;
-    margin-bottom: 8px;
+    margin-bottom: 1vh;
     text-transform: uppercase;
 }
 
