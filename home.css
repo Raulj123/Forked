@@ -171,6 +171,13 @@ table {
   --orange_100: #ffedcc;
   --purple_main: #340b67;
   --purple_main_hover: #b49fcc;
+  background-image: linear-gradient(
+    100deg,
+    #bdc3c7,
+    #2c3e50,
+    #bdc3c7,
+    #2c3e50
+  );
 }
 
 html {
@@ -185,6 +192,7 @@ html {
   
 }
 .nav{
+  border: 1px solid black;
   background-color: #508bfc;
   padding: 2rem;
   width: 100%;
@@ -195,9 +203,24 @@ html {
 }
 
 .navlink { 
+    /* border: 1px solid black; */
+    
+    height: 100%;
+    width: 100%;
+    padding: 29px 87px;
     text-decoration: none;
     color: black;
     list-style: none;
+    box-shadow: inset 0 0 0 0 #bdc3c7;
+    transition: ease-out 0.7s;
+
+}
+.navlink:hover {
+  box-shadow: inset 400px 0 0 0 #2c3e50;
+  /* box-shadow: inset 70px 0 0 0 #2c3e50; */
+  /* box-shadow: inset -70px 0 0 0 yellow; */
+  color: White;
+
 }
 .title {
   color: var(--sky_300);
