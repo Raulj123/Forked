@@ -40,6 +40,13 @@ body {
     min-width: 40vh;
 }
 
+.content img {
+    object-fit: cover;
+    height: 55vh;
+    width: 40vh;
+    max-width: 100%;
+}
+
 .card-container {
     display: flex;
     gap: 6vh;
