@@ -7,6 +7,8 @@
     <!-- Define your CSS file here so you can style your HTML -->
     <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="feedpage.css">
+    <!--Link added to use font-awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <title>Page 2</title>
   </head>
   <body>
@@ -28,7 +30,15 @@
           <a class="navlink" href="edit_profile.html">&#9881</a>
         </li>
       </ul>
-      <h1 class="title">Your Feed</h1>
+      <!--Wrapper-->
+      <div class="search-container">
+        <!--Search Icon-->
+        <div class="fa fa-search"></div>
+        <!--Input for text-->
+        <input input="text" placeholder="Search"/>
+        <!--Delete icon-->
+        <div class="fa fa-times"></div>
+      </div>
       <div class="content"></div>
       <div class="card-container">
         <div class="card">
