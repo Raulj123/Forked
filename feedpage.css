@@ -18,6 +18,11 @@ body {
     margin: 0;
 }
 
+.title {
+    color: #fff;
+
+}
+
 .hero-section {
     display: flex;
     min-height: 100%;
@@ -28,16 +33,16 @@ body {
 
 .content{
     display: flex;
-    justify-content: center;
-    max-width: 50px;
-    max-height: 50px;
-    min-height: 50px;
-    min-height: 50px;
+    justify-content: top;
+    max-width: 40vh;
+    max-height: 55vh;
+    min-height: 55vh;
+    min-width: 40vh;
 }
 
 .card-container {
     display: flex;
-    gap: 30px;
+    gap: 6vh;
     width: 100%;
     justify-content: center;
 }
@@ -45,7 +50,8 @@ body {
 .card {
     position: relative;
     list-style: none;
-    width: 200px;
+    width: 40vh;
+    height: 55vh;
     transition: .3s ease;
 }
 
@@ -63,7 +69,7 @@ body {
     left: 0;
     top: 0;
     border-radius: 20px;
-    background-size: 200px;
+    background-size: 300px;
     background-position: center;
     filter: brightness(.9) saturate(1) contrast(1);
     transform-origin: bottom;
