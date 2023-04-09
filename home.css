@@ -270,7 +270,7 @@ html {
     color: rgb(235, 231, 231);
   }
 
-  h2{
+  .tag{
     display: flex;
     justify-content: center;
     font-size: large;

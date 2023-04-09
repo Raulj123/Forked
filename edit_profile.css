@@ -1,4 +1,16 @@
-
+body {
+  background-image: linear-gradient(
+    100deg,
+    #bdc3c7,
+    #2c3e50,
+    #bdc3c7,
+    #2c3e50
+  );
+  height: 100vh;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  line-height: 1;
+}
 .content-wrapper {
     display: flex;
   }
@@ -25,6 +37,7 @@
   
   .side-bar ul {
     list-style-type: none;
+    padding-left: 0%;
   }
 
   .custom-btn {
@@ -34,6 +47,7 @@
   }
   
   .head  {
-    padding-left: 50px;
+    padding-left: 20px;
   }
+
 
