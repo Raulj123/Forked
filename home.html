@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.19.1/css/mdb.min.css" rel="stylesheet">
     <!-- Define your CSS file here so you can style your HTML -->
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="home.css" />
+    <!--Link added to use font-awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <title>Home</title>
   </head>
   <body>
@@ -15,10 +16,13 @@
       <ul class="nav">
         
         <li>
-          <a class="navlink" href="/">Home</a>
+          <a class="navlink" href="home.html">Home</a>
         </li>
         <li>
-          <a class="navlink" href="index.html">Log Out</a>
+          <a class="navlink" href="login.html">Log In</a>
+        </li>
+        <li>
+          <a class="navlink" href="signup.html"> Sign Up</a>
         </li>
         <li>
           <a class="navlink" href="page2.html"> Feed Page</a>
@@ -31,18 +35,14 @@
         </li>
       </ul>
     </div>
-    <div class="search-container">
-      <table>
-        <tr>
-          <td>
-            <input type="text" placeholder="Search">
-          </td>
-          <td class="search-icon">
-            <!-- <a href="#"><i class="material-icons">search</i></a> -->
-            <!-- sub -->
-          </td>
-        </tr>
-      </table>
-    </div>
+    <!--Wrapper-->
+      <div class="search-container">
+        <!--Search Icon-->
+        <div class="fa fa-search"></div>
+        <!--Input for text-->
+        <input input="text" placeholder="Search"/>
+        <!--Delete icon-->
+        <div class="fa fa-times"></div>
+      </div>
   </body>
 </html>
