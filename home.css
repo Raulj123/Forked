@@ -187,8 +187,7 @@ html {
     display: flex;
     align-items: center;
     font-size: 1.5rem;
-    justify-content: space-between;
-    width: 325px;
+    width: 40vw;
     background: rgb(217, 2, 2);
     padding: 0.5rem;
     border-radius: 50px;
@@ -197,13 +196,20 @@ html {
     box-shadow: 0.25rem 0.25rem 1rem rgb(217, 0, 0);
     margin: auto;
     margin-top: 10%;
+    border: 2px solid black;
   }
+
+.fa-times{
+  margin-left: auto;
+}
+
  input{
     font-size: 1.5rem;
     /* top, right, bottom, left */
     margin: 0 0.5rem 0 0.5rem;
     border: none;
     outline: none;
+    border-radius: 50px;
     background: rgb(217, 0, 0);
     color: black;
   }
