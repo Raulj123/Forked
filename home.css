@@ -269,3 +269,13 @@ html {
   input::placeholder{
     color: rgb(235, 231, 231);
   }
+
+  h2{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    text-align: center;
+  }
