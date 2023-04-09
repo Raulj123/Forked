@@ -122,6 +122,7 @@ subBtn.addEventListener('click', addData);
     if(firstName.value =="" || lastName.value == "" || email.value=="" || major.value==""){
         alert("Please include all fields")
     }else{
+      // data is in Users would like it in a seperate table just dont know how?
         set(ref(db, "Users/UsersInfo/" + firstName.value),{
             First: firstName.value,
             Last: lastName.value,
